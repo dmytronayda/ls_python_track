@@ -1,7 +1,3 @@
-# ls_python_track
-# ls_python_track
-# ls_python_track
-# ls_python_track
-# ls_python_track
-# ls_python_track
-# ls_python_track
+# Launch School - Python track
+
+Collection of the work files for the Launch School Python track. 
