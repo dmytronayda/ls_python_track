@@ -1,11 +1,6 @@
-ANNUAL_INTEREST_RATE = 0.05
+user_age = int(input("What's your age?\n"))
+years_from_now = 10
 
-def deposit_growth(cash, years):
-    balance = 0 + cash
-    for year in range(years):
-        balance *= 1 + ANNUAL_INTEREST_RATE
-    return f"""Your balance after {years} years of deposit
-    with annual interest rate of {ANNUAL_INTEREST_RATE:.0%}
-    will be ${round(balance, 2)}"""
-
-print(deposit_growth(1000, 5))
+for i in range(4):
+    print(f"In {years_from_now} years, you will be {user_age + years_from_now}")
+    years_from_now += 10;
