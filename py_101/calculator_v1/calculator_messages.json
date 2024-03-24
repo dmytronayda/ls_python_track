@@ -1,0 +1,26 @@
+{
+   "en" : {
+    "welcome" : "Welcome to Calculator!",
+    "first_number" : "What's the first number?",
+    "second_number" : "What's the second number?",
+    "invalid_number_error" : "Hmm... that doesn't look like a valid number.",
+    "operations" : "What operation would you like to perform?\n1) Add 2) Subtract 3) Multiply 4) Divide",
+    "invalid_operation_error" : "You must choose 1, 2, 3, or 4",
+    "calculate_again" : "Would you like to calculate again? y/n",
+    "result" : "The result is: ",
+    "calculate_again_options": ["Y", "N"],
+    "invalid_option_error" : "You must choose 'Y' to calculate again or 'N' to exit."
+   },
+   "de" : {
+    "welcome" : "Willkommen in Kalkulator!",
+    "first_number" : "Was ist die erste Nummer?",
+    "second_number" : "Was ist die zweite Nummer?",
+    "invalid_number_error" : "Hmm... Das ist keine gültige Nummer. Bitte versuche es noch einmal.",
+    "operations" : "Welche Operation möchten Sie ausführen?\n1) Hinzufügen 2) Subtrahieren 3) Multiplizieren 4) Teilen",
+    "invalid_operation_error" : "Sie müssen 1, 2, 3, oder 4 wählen.",
+    "result" : "Das Ergebnis ist: ",
+    "calculate_again" : "Möchten Sie erneut berechnen? j/n",
+    "calculate_again_options": ["J", "N"],
+    "invalid_option_error" : "Du musst 'J' wählen, um erneut zu berechnen oder 'N' zum Beenden."
+   }
+}
