@@ -9,6 +9,8 @@ VALID_CHOICES = MESSAGES[LANGUAGE]["valid_choices"]
 ROCK = VALID_CHOICES[0]
 PAPER = VALID_CHOICES[1]
 SCISSORS = VALID_CHOICES[2]
+LIZARD = VALID_CHOICES[3]
+SPOCK = VALID_CHOICES[4]
 VALID_ANSWERS = MESSAGES[LANGUAGE]["valid_answers"]
 NO = VALID_ANSWERS[1]
 
@@ -21,17 +23,21 @@ def json_string(message_key, lang="en"):
     return MESSAGES[lang][message_key]
 
 
-def displayWinner(user_choice, computer_choice):
+def display_winner(user_choice, computer_choice):
     if (
-        (user_choice == ROCK and computer_choice == SCISSORS)
-        or (user_choice == PAPER and computer_choice == ROCK)
-        or (user_choice == SCISSORS and computer_choice == PAPER)
+        (user_choice == ROCK and computer_choice in [LIZARD, SCISSORS])
+        or (user_choice == PAPER and computer_choice in [ROCK, SPOCK])
+        or (user_choice == SCISSORS and computer_choice in [PAPER, LIZARD])
+        or (user_choice == LIZARD and computer_choice in [PAPER, SPOCK])
+        or (user_choice == SPOCK and computer_choice in [ROCK, SCISSORS])
     ):
         prompt(json_string("user_win", LANGUAGE))
     elif (
-        (user_choice == ROCK and computer_choice == PAPER)
-        or (user_choice == PAPER and computer_choice == SCISSORS)
-        or (user_choice == SCISSORS and computer_choice == ROCK)
+        (user_choice == ROCK and computer_choice in [PAPER, SPOCK])
+        or (user_choice == PAPER and computer_choice in [SCISSORS, LIZARD])
+        or (user_choice == SCISSORS and computer_choice in [ROCK, SPOCK])
+        or (user_choice == LIZARD and computer_choice in [ROCK, SCISSORS])
+        or (user_choice == SPOCK and computer_choice in [LIZARD, PAPER])
     ):
         prompt(json_string("computer_win", LANGUAGE))
     else:
@@ -52,7 +58,7 @@ while True:
 
     prompt(f"You selected {user_choice}, computer chose {computer_choice}.")
 
-    displayWinner(user_choice, computer_choice)
+    display_winner(user_choice, computer_choice)
 
     prompt(json_string("play_again", LANGUAGE))
     answer = input().lower()

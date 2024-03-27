@@ -1,11 +1,13 @@
 {
     "en": {
         "welcome": "👋🏼 Welcome to Rock Paper Scissors game!",
-        "move_selection": "Choose one: rock, paper, scissors.",
+        "move_selection": "Choose one: rock, paper, scissors, lizard, spock.",
         "valid_choices": [
             "rock",
             "paper",
-            "scissors"
+            "scissors",
+            "lizard",
+            "spock"
         ],
         "invalid_move": "That's not a valid choice",
         "user_win" : "You win!",
