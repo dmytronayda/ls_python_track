@@ -1,0 +1,21 @@
+{
+    "en": {
+        "welcome": "👋🏼 Welcome to Rock Paper Scissors game!",
+        "move_selection": "Choose one: rock, paper, scissors.",
+        "valid_choices": [
+            "rock",
+            "paper",
+            "scissors"
+        ],
+        "invalid_move": "That's not a valid choice",
+        "user_win" : "You win!",
+        "computer_win" : "Computer wins!",
+        "tie" : "It's a tie!",
+        "play_again" : "Do you want to play again (y/n)?",
+        "valid_answers" : [
+            "y",
+            "n"
+        ],
+        "invalid_answer" : "Please enter 'y' or 'n'."
+    }
+}
