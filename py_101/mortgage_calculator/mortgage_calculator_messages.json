@@ -1,0 +1,11 @@
+{
+    "en": {
+        "welcome" : "Welcome to Car Loan Calculator!",
+        "loan_amount": "What's the total loan amount you need?",
+        "invalid_loan_amount" : "Total loan amount must be a number (e.g. 1000 or 10000.10).",
+        "loan_duration_yrs": "How long in years would you like you to pay for it?",
+        "invalid_loan_duration_yrs" : "Loan duration must be a number (e.g. 5 or 10).",
+        "annual_interest": "What's the proposed Annual Percentage Rate you got from the dealer? (e.g. 10 for 10%)",
+        "invalid_annual_interest" : "Annual Percentage Rate must be a number (e.g. 10 or 11.02)."
+    }
+}
